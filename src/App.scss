@@ -127,15 +127,190 @@ letter-spacing: 0px;
 @media screen and (max-width:718px){
     .navbar .links {
     display: none; }
+   .grid-container{
+       display: block !important;
    
+       .web-design{
+           background-image: url('./components/assets/home/mobile/image-web-design.jpg');
+       }
+
+       .app{
+        background-image: url('./components/assets/home/mobile/image-app-design.jpg');
+    }
+
+
+    .graphic{
+        background-image: url('./components/assets/home/mobile/image-graphic-design.jpg');
+    }
+
+
+       .i-card{
+           width:100%;
+           min-height: 250px;
+           h4{
+               font-size: 28px !important;
+           }
+           .bg{
+            min-height: 250px;
+          text-align: center;
+           }
+       }
+
+    }
+    .hero {
+         .txt h1{
+             font-size: 32px;
+             font-weight: 500;
+             text-align: center;
+         }
+         
+    }
+    .home {
+        .container{
+            width: 100% !important;
+        }
+    }
+    .hero{
+        background-size: cover;
+
+        background-image: url('./components/assets/home/desktop/bg-pattern-hero-home.svg');
+    }
+    .hero #img{
+        background-size: cover;
+        background-image: url('./components/assets/home/desktop/image-hero-phone.png');
+    }
+    .hero #img img{
+    display: none;
+        margin: 0;
+
+        position: absolute;
+    }
 }
 
 .grid-container{
     width: 100%;
     border-radius: 20px;
-    min-height: 75vh;
     margin: 20vh auto;
-    border: 1px solid red;
+    display: grid;
+
+    grid-template-columns: repeat(4,25%);
+    grid-auto-rows: 10vh;
+    grid-gap: 0px 0px;
+  .web-design{
+    background-image: url('./components/assets/home/desktop/image-web-design-large.jpg');
+  }
+  .app{
+    background-image: url('./components/assets/home/desktop/image-app-design.jpg');
+  }
+  .graphic{
+    background-image: url('./components/assets/home/desktop/image-graphic-design.jpg');
+}
+ 
+  .i-card{
+      .bg{
+          width:100%;
+          overflow: hidden !important;
+          display: flex !important;
+          justify-content:center !important;
+          align-items:center !important;
+          flex-direction: column !important;
+         background-color: rgba($color: #000000, $alpha: 0.5);     
+          height: 100%;
+          transition: 0.2s ease-in-out;
+          &:hover{
+              background-color: rgba(231, 129, 107, 0.7);
+          }
+      }
+  h4{
+      color: white;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      margin: 25px auto;
+      text-transform: uppercase;
+  }
+  a{
+
+letter-spacing: 0.2em;
+      color: white;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-family: $font;
+      font-weight: 500;
+  }
+      background-blend-mode:darken; 
+            background-size: cover;
+        background-position: center;
+        width:100%;
+        height:100%;
+      
+border-radius: 12px;
+overflow: hidden !important;
+    }
+    .l-card{
+        overflow: hidden !important;
+
+        grid-column: span 2;
+      grid-row: span 8;
+      padding: 10px;
+    }
+    .r-card,.r-card2{
+        padding: 10px;
+
+        grid-column: span 2;
+        grid-row: span 4;
+}
+ .m-col{
+     padding: 20px !important;
+    min-height: 80vh;
+ }
 }
 
 
+.f-card{
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+    h4{
+        width:85%;
+        margin-top: 5vh !important;
+        margin-bottom: 5vh;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing:0.2em;
+    }
+    p{
+        width: 85%;
+        word-spacing: 0.2em;
+        text-align: center;
+        line-height: 150%;
+        font-weight: 500;
+        font-size: 16px;
+    }
+  
+    min-height: 50vh;
+    text-align: center;
+    .circle{
+        width:25vh;
+        z-index: -1;
+        border-radius: 50%;
+
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.082) 0%, rgba(93, 2, 2, 0.0001) 100%);
+
+        height:25vh;
+
+    }
+    img{
+       
+        width:100%;
+        height:25vh;
+        object-fit: contain;
+    }
+  
+}

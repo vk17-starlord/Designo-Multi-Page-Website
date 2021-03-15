@@ -158,21 +158,200 @@ body {
   .navbar .links {
     display: none;
   }
-  .navbar h4 {
-    margin-left: 0 !important;
+  .grid-container {
+    display: block !important;
   }
-  .navbar h4::before {
-    left: -10px;
+  .grid-container .web-design {
+    background-image: url("./components/assets/home/mobile/image-web-design.jpg");
   }
-  .navbar h4::after {
-    right: 0 !important;
+  .grid-container .app {
+    background-image: url("./components/assets/home/mobile/image-app-design.jpg");
+  }
+  .grid-container .graphic {
+    background-image: url("./components/assets/home/mobile/image-graphic-design.jpg");
+  }
+  .grid-container .i-card {
+    width: 100%;
+    min-height: 250px;
+  }
+  .grid-container .i-card h4 {
+    font-size: 28px !important;
+  }
+  .grid-container .i-card .bg {
+    min-height: 250px;
+    text-align: center;
+  }
+  .hero .txt h1 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .home .container {
+    width: 100% !important;
+  }
+  .hero {
+    background-size: cover;
+    background-image: url("./components/assets/home/desktop/bg-pattern-hero-home.svg");
+  }
+  .hero #img {
+    background-size: cover;
+    background-image: url("./components/assets/home/desktop/image-hero-phone.png");
+  }
+  .hero #img img {
+    display: none;
+    margin: 0;
+    position: absolute;
   }
 }
 
 .grid-container {
   width: 100%;
   border-radius: 20px;
-  min-height: 75vh;
   margin: 20vh auto;
-  border: 1px solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 10vh;
+  grid-gap: 0px 0px;
+}
+
+.grid-container .web-design {
+  background-image: url("./components/assets/home/desktop/image-web-design-large.jpg");
+}
+
+.grid-container .app {
+  background-image: url("./components/assets/home/desktop/image-app-design.jpg");
+}
+
+.grid-container .graphic {
+  background-image: url("./components/assets/home/desktop/image-graphic-design.jpg");
+}
+
+.grid-container .i-card {
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden !important;
+}
+
+.grid-container .i-card .bg {
+  width: 100%;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.grid-container .i-card .bg:hover {
+  background-color: rgba(231, 129, 107, 0.7);
+}
+
+.grid-container .i-card h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  margin: 25px auto;
+  text-transform: uppercase;
+}
+
+.grid-container .i-card a {
+  letter-spacing: 0.2em;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif !important;
+  font-weight: 500;
+}
+
+.grid-container .l-card {
+  overflow: hidden !important;
+  grid-column: span 2;
+  grid-row: span 8;
+  padding: 10px;
+}
+
+.grid-container .r-card, .grid-container .r-card2 {
+  padding: 10px;
+  grid-column: span 2;
+  grid-row: span 4;
+}
+
+.grid-container .m-col {
+  padding: 20px !important;
+  min-height: 80vh;
+}
+
+.f-card {
+  margin: 0 auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.f-card h4 {
+  width: 85%;
+  margin-top: 5vh !important;
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.f-card p {
+  width: 85%;
+  word-spacing: 0.2em;
+  text-align: center;
+  line-height: 150%;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.f-card .circle {
+  width: 25vh;
+  z-index: -1;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(93, 2, 2, 0.082)), to(rgba(93, 2, 2, 0.0001)));
+  background: linear-gradient(90deg, rgba(93, 2, 2, 0.082) 0%, rgba(93, 2, 2, 0.0001) 100%);
+  height: 25vh;
+}
+
+.f-card img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
