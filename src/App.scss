@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif !important;
+}
+
+body{
+    overflow-x: hidden !important;
+}
+$font:'Jost', sans-serif !important;
+$primary:#e7816b;
+.home{
+    width: 100%;
+    min-height: 100vh;
+
+
+}
+.navbar{
+    padding:0 !important;
+    margin: 5vh auto;
+margin-bottom: 8vh;
+    width: 100% ;
+display: flex;
+justify-content:center;
+align-items:center;
+.links{
+    
+     display: flex;
+     justify-content:space-between;
+     align-items:center;
+     padding: 0 !important;
+
+    }
+a{
+    color: black;
+ text-transform: uppercase;
+    font-family: $font;
+    letter-spacing:0.1em;
+    font-size: 16px;
+    
+}
+img{
+object-fit: contain;
+width:200px;
+height: 40px;
+}
+}
+.container{
+    width: 75%;
+    padding: 0 !important;
+    margin: 0 auto;
+    
+}
+
+.hero{
+    width:100%;
+    border-radius: 20px;
+margin: 0 auto;
+margin-bottom: 10vh;
+    background-color: $primary;
+.col{
+    min-height: 80vh !important;
+
+}
+    #img{
+        img{
+            position:relative;
+          margin-bottom: -25vh;
+            width: 100% !important;
+        }
+        overflow: hidden;
+          display: flex;
+          justify-content:flex-end;
+          align-items:flex-end;
+        background-size: cover;
+    background-image: url('./components/assets/home/desktop/bg-pattern-hero-home.svg');
+
+}
+.txt{
+    color: #ffffff;
+    padding: 2em;
+display: flex;
+justify-content:center;
+align-items:flex-start;
+button{
+    
+    box-shadow: none;
+    border-radius: 08px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-size: 18px;
+    &:hover{
+        color: #FFFFFF;
+        background-color: #FFAD9B;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+    }
+}
+flex-direction: column;
+p{
+    width:100%;
+    font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+margin: 0px 0;
+margin-bottom: 25px;
+letter-spacing: 0px;
+}
+    h1{
+
+        font-size: 48px;
+        width:100%;
+        font-family: $font;
+        font-weight: 800;
+
+        margin:20px 0 ;
+    }
+}
+}
+
+@media screen and (max-width:718px){
+    .navbar .links {
+    display: none; }
+   
+}
+
+.grid-container{
+    width: 100%;
+    border-radius: 20px;
+    min-height: 75vh;
+    margin: 20vh auto;
+    border: 1px solid red;
+}
+
+

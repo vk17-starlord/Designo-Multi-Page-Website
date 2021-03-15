@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Jost', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.home {
+  width: 100%;
   min-height: 100vh;
+}
+
+.navbar {
+  padding: 0 !important;
+  margin: 5vh auto;
+  margin-bottom: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar a {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif !important;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+
+.navbar img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 200px;
+  height: 40px;
+}
+
+.container {
+  width: 75%;
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  background-color: #e7816b;
+}
+
+.hero .col {
+  min-height: 80vh !important;
+}
+
+.hero #img {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-size: cover;
+  background-image: url("./components/assets/home/desktop/bg-pattern-hero-home.svg");
+}
+
+.hero #img img {
+  position: relative;
+  margin-bottom: -25vh;
+  width: 100% !important;
+}
+
+.hero .txt {
+  color: #ffffff;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .txt button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 08px;
+  border: none;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  font-size: 18px;
+}
+
+.hero .txt button:hover {
+  color: #FFFFFF;
+  background-color: #FFAD9B;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hero .txt p {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0px 0;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+}
+
+.hero .txt h1 {
+  font-size: 48px;
+  width: 100%;
+  font-family: "Jost", sans-serif !important;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 718px) {
+  .navbar .links {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar h4 {
+    margin-left: 0 !important;
   }
+  .navbar h4::before {
+    left: -10px;
+  }
+  .navbar h4::after {
+    right: 0 !important;
+  }
+}
+
+.grid-container {
+  width: 100%;
+  border-radius: 20px;
+  min-height: 75vh;
+  margin: 20vh auto;
+  border: 1px solid red;
 }
