@@ -52,7 +52,7 @@ With over 10 years in the industry, we are experienced in creating fully respons
     <div className="i-card web-design">
     <div className="bg">
     <h4>Web Design</h4>
-    <a href='#'>View Projects <BsChevronRight></BsChevronRight></a>
+    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
     </div>
     </div>
 </div>
@@ -60,7 +60,7 @@ With over 10 years in the industry, we are experienced in creating fully respons
 <div className="i-card app">
 <div className="bg">
     <h4>App Design</h4>
-    <a href='#'>View Projects <BsChevronRight></BsChevronRight></a>
+    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
     </div>
 </div>
 
@@ -69,7 +69,7 @@ With over 10 years in the industry, we are experienced in creating fully respons
 <div className="i-card graphic">
 <div className="bg">
     <h4>Graphic Design</h4>
-    <a href='#'>View Projects <BsChevronRight></BsChevronRight></a>
+    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
     </div>
 </div>
 
