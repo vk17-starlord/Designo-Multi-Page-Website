@@ -45,7 +45,7 @@ body {
   padding: 0 !important;
 }
 
-.navbar a {
+.navbar span {
   color: black;
   text-transform: uppercase;
   font-family: "Jost", sans-serif !important;
@@ -379,4 +379,16 @@ body {
   .f-card h4, .f-card p {
     width: 100% !important;
   }
+}
+
+.leaflet-container {
+  height: 100%;
+  min-height: 50vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
 }

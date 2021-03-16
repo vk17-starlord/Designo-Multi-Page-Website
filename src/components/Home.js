@@ -1,11 +1,11 @@
 import React from 'react'
 import mobile from './assets/home/desktop/image-hero-phone.png'
-import Navbar from './Navbar'
+
 import {BsChevronRight } from "react-icons/bs";
 import passionate from "./assets/home/desktop/illustration-passionate.svg"
 import resourceful from "./assets/home/desktop/illustration-resourceful.svg"
 import friendly from "./assets/home/desktop/illustration-friendly.svg"
-import Footer from './Footer';
+
 function Home() {
 
     const features =[
@@ -33,7 +33,7 @@ function Home() {
         <div className="home">
         <div className="container">
 
-<Navbar />
+
 
 <div className="hero row">
 <div className="col txt col-sm-12 col-lg-6 col-md-12">
@@ -96,7 +96,7 @@ With over 10 years in the industry, we are experienced in creating fully respons
    
 
         </div>
-        <Footer/>
+   
         </div>
 
     )

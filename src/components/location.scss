@@ -1,0 +1,40 @@
+.map{
+   
+    margin: 5vh auto;
+    padding: 1em;
+    
+    .m-card{
+      border-radius: 20px;
+        width:100%;
+        background-color: #fdf3f0;
+        min-height: 50vh;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+       .row{
+           width: 80%;
+       }
+        h4{
+            text-align: left;
+            margin: 25px auto!important;
+            width:95%;
+            font-weight: 500;
+            font-size: 40px;
+            letter-spacing: 0.1em;
+            color: #E7816B;    
+        }
+        p{
+            width:100%;
+            font-size: 18px;
+            line-height: 120%;
+        }
+    }
+}
+
+@media screen and (max-width: 718px) {
+
+    .map{
+        margin: 0 auto;
+    }
+}

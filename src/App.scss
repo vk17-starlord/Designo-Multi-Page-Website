@@ -34,7 +34,7 @@ align-items:center;
      padding: 0 !important;
 
     }
-a{
+span{
     color: black;
  text-transform: uppercase;
     font-family: $font;
@@ -330,3 +330,16 @@ overflow: hidden !important;
         }
     }
 }
+
+.leaflet-container {
+    height: 100%;
+    min-height: 50vh ;
+    width: 100%;
+    border-radius: 20px;  
+}
+  
+  .leaflet-div-icon {
+    background: transparent;
+    border: none;
+  }
+  
