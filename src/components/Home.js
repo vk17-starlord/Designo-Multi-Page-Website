@@ -93,10 +93,10 @@ With over 10 years in the industry, we are experienced in creating fully respons
 
 </div>
         
-        <Footer/>
+   
 
         </div>
-        
+        <Footer/>
         </div>
 
     )

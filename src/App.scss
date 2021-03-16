@@ -314,3 +314,19 @@ overflow: hidden !important;
     }
   
 }
+
+@media screen and (max-width: 718px) {
+    .features {
+        margin-right: auto !important;
+        margin-left: auto!important;
+    }
+    .f-card{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        h4,p{
+            width:100% !important;
+        }
+    }
+}
