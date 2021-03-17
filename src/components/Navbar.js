@@ -26,7 +26,7 @@ function Navbar() {
 <Link to='/'><img alt="logo" src={logo}></img></Link>
 </div>
 
-<div className="col-sm-4 mob-links">
+<div className="col-sm-4 mob-links" >
 
 <button className="menu" onClick={menuToggler}><HiMenuAlt3 /></button>
 </div>

@@ -194,6 +194,9 @@ body {
 }
 
 @media screen and (max-width: 718px) {
+  .l-card {
+    min-height: auto !important;
+  }
   .mob-links {
     -webkit-transition: 0.2s ease-in-out !important;
     transition: 0.2s ease-in-out !important;

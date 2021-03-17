@@ -153,6 +153,9 @@ span{
     }
 }
 @media screen and (max-width:718px){
+    .l-card{
+        min-height: auto !important;
+    }
     .mob-links{
         transition: 0.2s ease-in-out !important;
         display: flex;

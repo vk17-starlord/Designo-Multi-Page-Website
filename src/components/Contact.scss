@@ -1,0 +1,91 @@
+$font:'Jost', sans-serif !important;
+$primary:#e7816b;
+.contact-form{
+    background-color: $primary;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+margin-bottom: 20vh;
+#msg,#form{
+    min-height: 65vh;
+    
+}
+h4{
+    width: 70%;
+    font-size: 50px;
+    line-height: 110%;
+    color: $primary;
+    letter-spacing: 0.0.5em;
+color: white;
+}
+p{
+    color: rgba(255, 255, 255, 0.897);
+    width: 70%;
+    font-size: 17px;
+    line-height: 150%;
+    margin: 10px 0;
+}
+#msg{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+ flex-direction: column;
+    padding:20px;
+    background-size: cover;
+    background-image: url('./assets/contact/desktop/bg-pattern-hero-desktop.svg');
+}
+#form{
+    font-weight: 500;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+input,textarea{
+    background-color: transparent;
+    border: none;
+    color: white;
+resize: none;    border-bottom: 1px solid #fff;
+    margin: 20px auto;
+    width:100% !important;
+    padding: 10px;
+}
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: .7; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+
+  input:focus ,textarea:focus {
+      outline: none !important;
+        border-bottom: 2px solid #fff; 
+  }
+
+  button{
+    position: relative;
+    z-index:2;
+      box-shadow: none;
+      border-radius: 08px;
+      border: none;
+      font-weight: 500;
+      letter-spacing :0.1em;
+      background-color: #fdf3f0;
+      color: black;
+      text-transform: uppercase;
+      padding: 15px 25px;
+      font-size: 16px;
+      &:hover{
+     
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+      }
+  }

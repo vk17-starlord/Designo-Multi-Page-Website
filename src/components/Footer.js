@@ -12,6 +12,12 @@ import {
      
      } from "react-router-dom";
 function Footer() {
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      };
     return (
         <footer className="footer">
             <div className="container footer-card row">
@@ -21,15 +27,16 @@ function Footer() {
 </p>
                   </div>  
               <div className="col-sm-12 col-lg-6 col">
-                  <button>Get in touch</button></div>  
+              <Link to="/Contact">  <button onClick={scrollToTop}>Get in touch</button> </Link>
 
+                </div>  
             </div>
 
             <div className="main-footer">
 <div className="container">
     <div className="f-nav">
         <img src={logo} alt="logo"></img>
-        <div className="links">
+        <div className="links" onClick={scrollToTop}>
         <Link to="/Company"><span>OUR COMPANY</span> </Link>
 
 <Link to="/Location"><span>Location</span> </Link>
