@@ -391,4 +391,11 @@ overflow: hidden !important;
     border: none;
   }
   
-  
+  @media screen and (max-width: 350px) {
+      .navbar >div{
+          width: 50%;
+      }
+      .mob-links{
+          align-items:flex-end !important;
+      }
+  }

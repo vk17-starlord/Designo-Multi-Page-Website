@@ -455,3 +455,14 @@ body {
   background: transparent;
   border: none;
 }
+
+@media screen and (max-width: 350px) {
+  .navbar > div {
+    width: 50%;
+  }
+  .mob-links {
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: flex-end !important;
+  }
+}

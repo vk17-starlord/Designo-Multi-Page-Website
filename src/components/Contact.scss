@@ -9,7 +9,25 @@ $primary:#e7816b;
 margin-bottom: 20vh;
 #msg,#form{
     min-height: 65vh;
-    
+    button{
+        position: relative;
+        z-index:2;
+          box-shadow: none;
+          border-radius: 08px;
+          border: none;
+          font-weight: 500;
+          letter-spacing :0.1em;
+          background-color: #fdf3f0;
+          color: black;
+          text-transform: uppercase;
+          padding: 15px 25px;
+          font-size: 16px;
+          &:hover{
+         
+              -webkit-transition: 0.2s ease-in-out;
+              transition: 0.2s ease-in-out;
+          }
+      }   
 }
 h4{
     width: 70%;
@@ -70,22 +88,4 @@ resize: none;    border-bottom: 1px solid #fff;
         border-bottom: 2px solid #fff; 
   }
 
-  button{
-    position: relative;
-    z-index:2;
-      box-shadow: none;
-      border-radius: 08px;
-      border: none;
-      font-weight: 500;
-      letter-spacing :0.1em;
-      background-color: #fdf3f0;
-      color: black;
-      text-transform: uppercase;
-      padding: 15px 25px;
-      font-size: 16px;
-      &:hover{
-     
-          -webkit-transition: 0.2s ease-in-out;
-          transition: 0.2s ease-in-out;
-      }
-  }
+ 

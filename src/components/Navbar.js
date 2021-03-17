@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
 <div className="navbar row">
-<div className="col-sm-8">
+<div className="col-sm-6">
 <Link to='/'><img alt="logo" src={logo}></img></Link>
 </div>
 
