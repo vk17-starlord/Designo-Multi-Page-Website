@@ -6,7 +6,11 @@ import instagram from './assets/shared/desktop/icon-instagram-color.svg'
 import pinterest from './assets/shared/desktop/icon-pinterest-color.svg'
 import twitter from './assets/shared/desktop/icon-twitter-color.svg'
 import youtube from './assets/shared/desktop/icon-youtube-color.svg'
-
+import {
+ 
+    Link
+     
+     } from "react-router-dom";
 function Footer() {
     return (
         <footer className="footer">
@@ -26,10 +30,10 @@ function Footer() {
     <div className="f-nav">
         <img src={logo} alt="logo"></img>
         <div className="links">
-        <a href="https://github.com/vk17-starlord">our company</a>    
-  
-  <a href="https://github.com/vk17-starlord">locations</a>    
-  <a href="https://github.com/vk17-starlord">contact</a>  
+        <Link to="/Company"><span>OUR COMPANY</span> </Link>
+
+<Link to="/Location"><span>Location</span> </Link>
+<Link to="/Contact"><span>contact</span> </Link>
 
         </div>
     </div>
