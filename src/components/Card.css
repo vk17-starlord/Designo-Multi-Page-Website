@@ -1,0 +1,255 @@
+.card-detail {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.card-info {
+  background-color: #e7816b;
+  margin: 0 auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 20px;
+  min-height: 30vh;
+  margin-bottom: 20vh;
+}
+
+.card-info h4 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.card-info p {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.p-con {
+  padding: 10px 15px;
+}
+
+.p-card {
+  width: 100%;
+  min-height: 60vh;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fdf3f0;
+  position: relative;
+}
+
+.p-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.p-card:hover {
+  z-index: 2;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: #e7816b;
+  color: white;
+  -webkit-transform: scale(1.02, 1.02);
+          transform: scale(1.02, 1.02);
+}
+
+.p-card:hover #heading {
+  color: white;
+}
+
+.p-card p {
+  font-size: 16px;
+  width: 80%;
+  line-height: 150%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+.p-card #heading {
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #e7816b;
+  margin-bottom: 20px;
+  text-transform: uppercase !important;
+}
+
+@media screen and (max-width: 718px) {
+  .card-info p {
+    width: 100%;
+  }
+  .card-info {
+    width: 90% !important;
+    margin: 25px auto;
+    padding: 10px;
+  }
+  .card-info h4 {
+    font-size: 30px !important;
+  }
+  .card-info .container {
+    padding: 5vh 0 !important;
+  }
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.other-block {
+  margin: 10vh auto;
+  margin-bottom: 5vh;
+}
+
+.p-con {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.o-card {
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden !important;
+}
+
+.o-card .bg {
+  min-height: 40vh;
+  width: 100%;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.o-card .bg:hover {
+  background-color: rgba(231, 129, 107, 0.7);
+}
+
+.o-card h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px !important;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  margin: 25px auto;
+  text-transform: uppercase !important;
+}
+
+.o-card a {
+  letter-spacing: 0.2em;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif !important;
+  font-weight: 500;
+}
+
+.Webdesign {
+  background-image: url("./assets/home/desktop/image-web-design-large.jpg");
+}
+
+.Appdesign {
+  background-image: url("./assets/home/desktop/image-app-design.jpg");
+}
+
+.Graphicdesign {
+  background-image: url("./assets/home/desktop/image-graphic-design.jpg");
+}
+
+.col-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden !important;
+}
+
+.col-block .bg {
+  min-height: 50vh;
+  width: 100%;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.col-block .bg:hover {
+  background-color: rgba(231, 129, 107, 0.7);
+}
+
+.col-block h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px !important;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  margin: 25px auto;
+  text-transform: uppercase !important;
+}
+
+.col-block a {
+  letter-spacing: 0.2em;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif !important;
+  font-weight: 500;
+}

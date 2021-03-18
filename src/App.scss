@@ -23,9 +23,7 @@ $primary:#e7816b;
     margin: 5vh auto;
 margin-bottom: 8vh;
     width: 100% ;
-display: flex;
-justify-content:center;
-align-items:center;
+
 .menu{
     background-color: transparent;
     border: none;
@@ -35,12 +33,14 @@ align-items:center;
 }
 
 .links{
-    
+
      display: flex;
-     justify-content:space-between;
+     justify-content:flex-end;
      align-items:center;
      padding: 0 !important;
-
+span{
+    margin: 20px;
+}
     }
 span{
     color: black;
@@ -272,11 +272,11 @@ span{
   h4{
       color: white;
       font-weight: 500;
-      font-size: 40px;
+      font-size: 40px !important;
       line-height: 100%;
       letter-spacing: 0.1em;
       margin: 25px auto;
-      text-transform: uppercase;
+      text-transform: uppercase !important;
   }
   a{
 
@@ -391,11 +391,31 @@ overflow: hidden !important;
     border: none;
   }
   
-  @media screen and (max-width: 350px) {
-      .navbar >div{
-          width: 50%;
+  @media screen and (max-width: 750px) {
+      #i-heading{
+          max-width: 95%;
+          margin: 20px auto;
+
+      }
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+        
+    }  
+    .navbar >div{
+          width: max-content;
       }
       .mob-links{
-          align-items:flex-end !important;
+        transition: 0.2s ease-in-out !important;
+          align-items:center!important;
       }
   }
+
+#i-heading{
+    text-align: center;
+    font-size: 40px !important;
+}
+
+.other{
+    margin: 10vh auto;
+}

@@ -21,15 +21,6 @@ body {
   margin: 5vh auto;
   margin-bottom: 8vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .navbar .menu {
@@ -44,13 +35,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 !important;
+}
+
+.navbar .links span {
+  margin: 20px;
 }
 
 .navbar span {
@@ -330,11 +325,11 @@ body {
 .grid-container .i-card h4 {
   color: white;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 40px !important;
   line-height: 100%;
   letter-spacing: 0.1em;
   margin: 25px auto;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .grid-container .i-card a {
@@ -456,13 +451,38 @@ body {
   border: none;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 750px) {
+  #i-heading {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .navbar > div {
-    width: 50%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   .mob-links {
-    -webkit-box-align: end !important;
-        -ms-flex-align: end !important;
-            align-items: flex-end !important;
+    -webkit-transition: 0.2s ease-in-out !important;
+    transition: 0.2s ease-in-out !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
+}
+
+#i-heading {
+  text-align: center;
+  font-size: 40px !important;
+}
+
+.other {
+  margin: 10vh auto;
 }

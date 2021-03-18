@@ -41,7 +41,7 @@ function Navbar() {
 }
 
 
-<div className="col-sm-4 links">
+<div className="col-sm-6 links">
 <Link to="/Company"><span>OUR COMPANY</span> </Link>
 
 <Link to="/Location"><span>Location</span> </Link>

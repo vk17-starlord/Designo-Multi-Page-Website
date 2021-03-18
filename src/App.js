@@ -6,6 +6,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Company from './components/Company'
+import Webdesign from './components/Webdesign'
+import Graphicdesign from './components/Graphicdesign'
+import Appdesign from './components/Appdesign'
 
 import {
   BrowserRouter as Router,
@@ -35,6 +38,16 @@ function App() {
              <Route path="/Contact" >
             <Contact />
              </Route>
+             <Route path="/Webdesign" >
+            <Webdesign />
+             </Route>
+             <Route path="/Appdesign" >
+            <Appdesign />
+             </Route>
+             <Route path="/Graphicdesign" >
+            <Graphicdesign />
+             </Route>
+           
         </Switch>
         <Footer/>
 </Router>

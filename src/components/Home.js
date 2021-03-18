@@ -1,7 +1,6 @@
 import React from 'react'
 import mobile from './assets/home/desktop/image-hero-phone.png'
-
-import {BsChevronRight } from "react-icons/bs";
+import Webblock from './Webblock';
 import passionate from "./assets/home/desktop/illustration-passionate.svg"
 import resourceful from "./assets/home/desktop/illustration-resourceful.svg"
 import friendly from "./assets/home/desktop/illustration-friendly.svg"
@@ -47,32 +46,20 @@ With over 10 years in the industry, we are experienced in creating fully respons
 </div>
 
 </div>
+
+
+
 <div className="grid-container">
 <div className="l-card">
-    <div className="i-card web-design">
-    <div className="bg">
-    <h4>Web Design</h4>
-    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
-    </div>
-    </div>
+<Webblock className={'web-design'} heading="Web Design" link='/Webdesign' />
 </div>
+
 <div className="r-card">
-<div className="i-card app">
-<div className="bg">
-    <h4>App Design</h4>
-    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
-    </div>
+<Webblock className={'app'} heading="App Design" link='/Appdesign' />
 </div>
 
-</div>
 <div className="r-card2">
-<div className="i-card graphic">
-<div className="bg">
-    <h4>Graphic Design</h4>
-    <a href='https://github.com/vk17-starlord'>View Projects <BsChevronRight></BsChevronRight></a>
-    </div>
-</div>
-
+<Webblock className={'graphic'} heading="Graphic Design" link='/Graphicdesign' />
 </div>
 </div>
 
@@ -101,5 +88,7 @@ With over 10 years in the industry, we are experienced in creating fully respons
 
     )
 }
+
+
 
 export default Home

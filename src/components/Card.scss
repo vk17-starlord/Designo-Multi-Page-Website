@@ -1,0 +1,215 @@
+$font:'Jost', sans-serif !important;
+$primary:#e7816b;
+.card-detail{
+    width: 100%;
+ 
+    min-height: 100vh;
+}
+
+.card-info{
+background-color: #e7816b;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h4{
+
+       font-size: 48px;
+       font-weight: 500;
+   }
+
+   p{
+       width:50%;
+       text-align:center;
+       margin: 0 auto;
+       font-size: 16px;
+   }
+    border-radius: 20px;
+    min-height: 30vh;
+    margin-bottom: 20vh;
+}
+
+.p-con{
+    padding: 10px 15px;
+}
+.p-card{
+width: 100%;
+min-height: 60vh;
+
+border-radius: 20px;
+overflow: hidden;
+background-color: #fdf3f0;
+img{
+    width:100%;
+    height:auto;
+    margin-bottom:20px;
+}
+position: relative;
+&:hover{
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    background-color: $primary;
+    #heading{
+        color: white;
+    }
+    color: white;
+    transform:scale(1.02,1.02)
+}
+p{
+    font-size: 16px;
+    width:80%;
+    line-height: 150%;
+    text-align:center;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+#heading{
+    font-size: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: $primary;
+    margin-bottom: 20px;
+    text-transform: uppercase !important;
+}
+}
+
+@media screen and (max-width: 718px) {
+    .card-info p{
+        width:100%;
+    }
+    .card-info{
+        width: 90% !important;
+        margin:25px auto;
+        padding: 10px;
+  h4{
+      font-size: 30px !important;
+  }
+    }
+    .card-info .container{
+       
+        padding: 5vh 0 !important;
+    }
+    .p-con{
+
+    }
+
+    .row{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.other-block{
+    margin: 10vh auto;
+    margin-bottom: 5vh;
+}
+.p-con{
+    padding: 20px  ;
+    margin: 0 auto;
+}
+.o-card{
+    
+    .bg{
+        min-height: 40vh;
+        width:100%;
+        overflow: hidden !important;
+        display: flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+        flex-direction: column !important;
+       background-color: rgba($color: #000000, $alpha: 0.5);     
+        height: 100%;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            background-color: rgba(231, 129, 107, 0.7);
+        }
+    }
+h4{
+    color: white;
+    font-weight: 500;
+    font-size: 40px !important;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    margin: 25px auto;
+    text-transform: uppercase !important;
+}
+a{
+
+letter-spacing: 0.2em;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $font;
+    font-weight: 500;
+}
+    background-blend-mode:darken; 
+          background-size: cover;
+      background-position: center;
+      width:100%;
+      height:100%;
+    
+border-radius: 12px;
+overflow: hidden !important;
+  }
+
+  .Webdesign{
+      background-image: url('./assets/home/desktop/image-web-design-large.jpg');
+  }
+  .Appdesign{
+      background-image: url('./assets/home/desktop/image-app-design.jpg')
+  }
+  .Graphicdesign{
+      background-image: url('./assets/home/desktop/image-graphic-design.jpg')
+  }
+  .col-block{
+  
+      width: 100%;
+      display: flex;
+      justify-content:center;
+      align-items:center;
+
+      .bg{
+        min-height: 50vh;
+        width:100%;
+        overflow: hidden !important;
+        display: flex !important;
+        justify-content:center !important;
+        align-items:center !important;
+        flex-direction: column !important;
+       background-color: rgba($color: #000000, $alpha: 0.5);     
+        height: 100%;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            background-color: rgba(231, 129, 107, 0.7);
+        }
+    }
+h4{
+    color: white;
+    font-weight: 500;
+    font-size: 40px !important;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    margin: 25px auto;
+    text-transform: uppercase !important;
+}
+a{
+
+letter-spacing: 0.2em;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $font;
+    font-weight: 500;
+}
+    background-blend-mode:darken; 
+          background-size: cover;
+      background-position: center;
+      width:100%;
+      height:100%;
+    
+border-radius: 12px;
+overflow: hidden !important;
+ 
+  }
